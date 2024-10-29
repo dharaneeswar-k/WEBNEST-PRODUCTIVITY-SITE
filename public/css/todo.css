@@ -1,0 +1,32 @@
+body {
+    background-color: #f0f8ff; /* Light background color */
+}
+
+.text-primary {
+    color: #007bff; /* Blue text color */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary button background color */
+    border-color: #007bff; /* Primary button border color */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3; /* Darker blue border on hover */
+}
+
+.completed {
+    text-decoration: line-through; /* Strikethrough for completed todos */
+    color: #6c757d; /* Grey color for completed tasks */
+}
+
+.header {
+    position: relative;
+}
+
+#catalogBtn {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+}

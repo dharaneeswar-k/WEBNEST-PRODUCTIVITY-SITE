@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog - WebNest</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="public/css/catalog.css">
+
+</head>
+<body>
+  <div class="container mt-4">
+    <h1 class="text-primary text-center">WebNest Projects Catalog</h1>
+
+    <div class="header">
+      <button id="todoBtn" class="btn btn-secondary mb-3">TodoList <img src="images/add.svg" alt="">  </button>
+    </div>
+
+    <form id="addProjectForm" class="mt-4">
+      <div class="row g-3 mb-3">
+        <div class="col-12 col-md-4">
+          <input type="text" id="projectName" class="form-control" placeholder="Project Name" required>
+        </div>
+        <div class="col-12 col-md-4">
+          <input type="url" id="githubLink" class="form-control" placeholder="GitHub Link" required>
+        </div>
+        <div class="col-12 col-md-4">
+          <input type="url" id="reportLink" class="form-control" placeholder="Report Link (Optional)">
+        </div>
+      </div>
+      <div class="row g-3 mb-3">
+        <div class="col-12 col-md-4">
+          <input type="url" id="mediaLink" class="form-control" placeholder="Image/Video Link (Optional)">
+        </div>
+        <div class="col-12 col-md-4">
+          <select id="owner" class="form-select" required>
+            <option selected disabled>Choose Proj Owner</option>
+            <option value="Arunagiri">Arunagiri</option>
+            <option value="Chandru">Chandru</option>
+            <option value="Dharaneeswar">Dharaneeswar</option>
+          </select>
+        </div>
+        <div class="col-12 col-md-4">
+          <button type="submit" class="btn btn-primary w-100">Add Project</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered mt-4">
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Project Name</th>
+            <th>GitHub Link</th>
+            <th>Report Link</th>
+            <th>Image/Video Link</th>
+            <th>Owner</th>
+          </tr>
+        </thead>
+        <tbody id="projectTableBody">
+          <!-- Dynamic rows will be added here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="public/js/catalog.js"></script>
+</body>
+</html>
